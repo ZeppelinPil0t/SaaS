@@ -36,6 +36,9 @@ gem 'font-awesome-sass', '4.6.2'
 # Use Ion Icons sass gem for adding icons
 gem "font-ionicons-rails"
 
+# Use hirb for better database table display in console
+gem 'hirb', '0.7.3'
+
 group :development, :test do
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
