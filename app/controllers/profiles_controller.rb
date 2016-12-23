@@ -13,7 +13,7 @@ class ProfilesController < ApplicationController
     #Create profile linked to this specific user
     if @profile.save
       flash[:success] = "Profile updated"
-      redirect_to root_path
+      redirect_to user_path(params[:user_id]) 
     else
       render action: :new
     end  
